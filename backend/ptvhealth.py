@@ -5,8 +5,8 @@
 from hashlib import sha1
 import hmac
 def getUrl(request):
-    devId = 2
-    key = b'7car2d2b-7527-14e1-8975-06cf1059afe0'
+    devId = "Placeholder until provided by PTV"
+    key = b"Placeholder until provided by PTV"
     request = request + ('&' if ('?' in request) else '?')
     raw = request+'devid={0}'.format(devId)
     hashed = hmac.new(key, raw.encode('utf-8'), sha1)
