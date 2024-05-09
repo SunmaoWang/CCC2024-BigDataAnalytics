@@ -5,15 +5,15 @@ es=Elasticsearch('https://127.0.0.1:9200/',
                  verify_certs=False,
                  basic_auth=('elastic','elastic'))
 
-with open('/data/population2021.json', 'r') as file:
+with open('/data/cleaned/population2021.json', 'r') as file:
     data = json.load(file)
 
 index_name = 'population2021'
 
-actions = [for key in data['LGA  code'].keys()
+actions = [
     {
         "_index": index_name,
-        "_id": key,  # 使用每个记录的LGA code作为ID
+        "_id": key,
         "_source": {
             "LGA_code": key,
             "LGA": data['LGA'][str(key)],
