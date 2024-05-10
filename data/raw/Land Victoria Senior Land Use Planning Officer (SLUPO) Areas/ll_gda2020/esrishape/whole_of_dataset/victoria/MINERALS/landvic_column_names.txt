@@ -1,0 +1,17 @@
+﻿The column names in a Shape file are limited to 10 characters
+This lists the short column name and the original column name in the database table
+-----------------------------------------------------------------------------------------------------
+
+DESC_SDE = DESC_SDE
+FIRSTNAME = FIRSTNAME
+TAG = TAG
+PHONE = PHONE
+SURNAME = SURNAME
+TOWNNAME = TOWNNAME
+POSTCODE = POSTCODE
+ADDRESS2 = ADDRESS2
+AREASQM = AREASQM
+HECTARES = HECTARES
+LANDVIC_CD = LANDVIC_CD
+STATE = STATE
+ADDRESS1 = ADDRESS1
