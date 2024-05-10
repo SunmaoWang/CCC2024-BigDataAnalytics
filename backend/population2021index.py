@@ -42,6 +42,3 @@ index_body={
 }
 
 es.indices.create(index=index_name, body=index_body)
-
-
-    
