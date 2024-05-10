@@ -2,7 +2,9 @@ from elasticsearch import Elasticsearch
 
 es = Elasticsearch('https://127.0.0.1:9200/',
                    verify_certs=False,
-                   basic_auth=('elastic', 'elastic'))
+                   basic_auth=('elastic', 'elastic'),
+                    timeout=30
+)
 
 index_name = 'chronic_diseases'
 
