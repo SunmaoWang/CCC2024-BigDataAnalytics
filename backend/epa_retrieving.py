@@ -1,4 +1,5 @@
 import requests
+import os
 import json
 from elasticsearch import Elasticsearch, helpers
 import logging
@@ -6,13 +7,21 @@ import logging
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
+es_host = os.getenv('ELASTICSEARCH_HOST', 'https://elasticsearch-master.elastic.svc.cluster.local:9200')
+es_user = os.getenv('ELASTICSEARCH_USER', 'elastic')
+es_pass = os.getenv('ELASTICSEARCH_PASS', 'elastic')
+
 # Elasticsearch configuration
 es = Elasticsearch(
-    'https://127.0.0.1:9200/',
-    verify_certs=False,  # Note: In a production environment, you should enable certificate verification
-    basic_auth=('elastic', 'elastic'),
-    timeout=30  # Use 'request_timeout' instead if you are using the latest version of Elasticsearch library
+    es_host,
+    verify_certs=False,
+    basic_auth=(es_user, es_pass),
+    timeout=30  # Consider using 'request_timeout' instead
 )
+
+# Print environment variables
+logging.info(f"Using Elasticsearch host: {es_host}")
+logging.info(f"Using Elasticsearch user: {es_user}")
 
 # Index settings
 index_name = "environmental_data"
@@ -51,7 +60,7 @@ try:
     else:
         logging.info("Index already exists.")
 except Exception as e:
-    logging.error("An error occurred while creating index: %s", e)
+    logging.error(f"An error occurred while creating index: {e}")
 
 # Function to fetch data from the API
 def fetch_air_quality_data():
@@ -62,9 +71,12 @@ def fetch_air_quality_data():
         "User-Agent": "MyApp/1.0"
     }
     response = requests.get(url, headers=headers)
+    logging.debug(f"Response status code: {response.status_code}")
+    logging.debug(f"Response text: {response.text}")
     if response.status_code == 200:
-        logging.info("Successfully fetched data.")
-        return response.json()
+        data = response.json()
+        logging.debug(f"Data fetched: {data}")
+        return data
     else:
         logging.error(f"Failed to fetch data: HTTP {response.status_code} - {response.text}")
         return None
@@ -90,7 +102,7 @@ def index_data_to_es(data):
                             logging.warning(f"'confidence' missing in reading: {r}")
 
             action = {
-                "_index": "environmental_data",
+                "_index": index_name,
                 "_source": record
             }
             actions.append(action)
