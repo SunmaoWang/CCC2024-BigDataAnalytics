@@ -7,7 +7,7 @@ import logging
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-es_host = os.getenv('ELASTICSEARCH_HOST', 'https://elasticsearch-master.elastic.svc.cluster.local:9200')
+es_host = os.getenv('ELASTICSEARCH_HOST', 'https://127.0.0.1:9200/')
 es_user = os.getenv('ELASTICSEARCH_USER', 'elastic')
 es_pass = os.getenv('ELASTICSEARCH_PASS', 'elastic')
 
@@ -15,8 +15,7 @@ es_pass = os.getenv('ELASTICSEARCH_PASS', 'elastic')
 es = Elasticsearch(
     es_host,
     verify_certs=False,
-    basic_auth=(es_user, es_pass),
-    timeout=30  # Consider using 'request_timeout' instead
+    basic_auth=(es_user, es_pass)
 )
 
 # Print environment variables

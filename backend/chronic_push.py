@@ -17,8 +17,8 @@ actions = [
         "_index": index_name,
         "_id": key,
         "_source": {
-            "Local Government Area Code": int(key),
-            "Local Government Area Name": data['Local Government Area Name'][key],
+            "Local Government Area Code": data['Local Government Area Code'].get(key),
+            "Local Government Area Name": data['Local Government Area Name'].get(key),
             "Chronic Obstructive Pulmonary Disease RRMSE": data['Chronic Obstructive Pulmonary Disease RRMSE'].get(key, None),
             "Persons with Mental and Behavioural Problems Rate per 100": data['Persons with Mental and Behavioural Problems Rate per 100'].get(key, None),
             "Asthma RRMSE": data['Asthma RRMSE'].get(key, None),
