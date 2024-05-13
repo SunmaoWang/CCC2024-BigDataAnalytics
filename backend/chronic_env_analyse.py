@@ -7,7 +7,7 @@ es_pass = os.getenv('ELASTICSEARCH_PASS', 'elastic')
 
 es = Elasticsearch(
     es_host,
-    verify_certs=False,  # Consider enabling certificate verification in production environments
+    verify_certs=False,
     basic_auth=(es_user, es_pass)
 )
 
@@ -20,7 +20,7 @@ lga_query = {
         "unique_lga_codes": {
             "terms": {
                 "field": "Local Government Area Code",
-                "size": 1000
+                "size": 180 # Adjust based on expected document count
             }
         }
     }
@@ -28,7 +28,7 @@ lga_query = {
 
 # Fetch health data for diseases
 health_query = {
-    "size": 1000,  # Adjust based on expected document count
+    "size": 180,  
     "query": {
         "match_all": {}
     }
