@@ -5,7 +5,7 @@ es=Elasticsearch('https://127.0.0.1:9200/',
                  verify_certs=False,
                  basic_auth=('elastic','elastic'))
 
-with open('./data/cleaned/population2021.json', 'r') as file:
+with open('/home/chanwang1/CCC2024-BigDataAnalytics/data/cleaned/population2021.json', 'r') as file:
     data = json.load(file)
 
 index_name = 'population2021'
@@ -15,7 +15,7 @@ actions = [
         "_index": index_name,
         "_id": key,
         "_source": {
-            "LGA_code": key,
+            "LGA_code": data['LGA  code'][str(key)],
             "LGA": data['LGA'][str(key)],
             "2021Persons0-4": data['2021Persons0-4'].get(str(key), 0),
             "2021Persons5-9": data['2021Persons5-9'].get(str(key), 0),
