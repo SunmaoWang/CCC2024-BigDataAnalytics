@@ -1,0 +1,2569 @@
+{
+    "took": 843,
+    "timed_out": false,
+    "_shards": {
+        "total": 9,
+        "successful": 9,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": {
+            "value": 8100,
+            "relation": "eq"
+        },
+        "max_score": 1,
+        "hits": [
+            {
+                "_index": "environmental_data",
+                "_id": "dw_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "ee780b50-0240-4c7e-99f8-0df759caf3a3",
+                    "siteName": "Churchill",
+                    "siteType": "Standard",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            146.414932,
+                            -38.3043137
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T15:00:00Z",
+                            "until": "2024-05-12T16:00:00Z",
+                            "healthParameter": "PM2.5",
+                            "averageValue": 1.67,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "1021"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "PM10",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T15:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 7.71,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 13,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1016"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "PM2.5",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T15:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 1.67,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 13,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1021"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 1.35,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 312,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1029"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "eA_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "cddf953a-b932-4918-97ea-1d19583d507a",
+                    "siteName": "Traralgon South",
+                    "siteType": "Sensor",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            146.5392,
+                            -38.29585
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T15:00:00Z",
+                            "until": "2024-05-12T16:00:00Z",
+                            "healthParameter": "Particles",
+                            "averageValue": 8.33,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "9999"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "Particles",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T15:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 8.33,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 12,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 6.16,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 288,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "eQ_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "70584bae-a7e7-4ae9-adf5-1e8e92b15386",
+                    "siteName": "Traralgon",
+                    "siteType": "Standard",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            146.531464,
+                            -38.1942825
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T15:00:00Z",
+                            "until": "2024-05-12T16:00:00Z",
+                            "healthParameter": "PM2.5",
+                            "averageValue": 2.7,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "1021"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "API",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T15:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "confidence": 0,
+                                            "totalSample": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "NO2",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T15:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "confidence": 0,
+                                            "totalSample": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "PM10",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T15:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 10.66,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 13,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1016"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "O3",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T15:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "confidence": 0,
+                                            "totalSample": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "PM2.5",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T15:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 2.7,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 13,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1021"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 4.59,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 98,
+                                            "totalSample": 312,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1029"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Visibility",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T15:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "confidence": 0,
+                                            "totalSample": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "SO2",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T15:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "confidence": 0,
+                                            "totalSample": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "CO",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T15:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "confidence": 0,
+                                            "totalSample": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "8HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T15:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "confidence": 0,
+                                            "totalSample": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "eg_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "69fa2d5e-557c-457a-9103-21bc2609f5eb",
+                    "siteName": "Tyers North",
+                    "siteType": "Sensor",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            146.4828,
+                            -38.12967
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T15:00:00Z",
+                            "until": "2024-05-12T16:00:00Z",
+                            "healthParameter": "Particles",
+                            "averageValue": 5.45,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "9999"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "Particles",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T15:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 5.45,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 12,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 5.97,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 288,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "fA_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "f5c385fd-c136-4398-99b0-35696b711b7b",
+                    "siteName": "Moe",
+                    "siteType": "Standard",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            146.258331,
+                            -38.1864662
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T15:00:00Z",
+                            "until": "2024-05-12T16:00:00Z",
+                            "healthParameter": "PM2.5",
+                            "averageValue": 3.88,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "1021"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "PM10",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T15:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 11.29,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 13,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1016"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "PM2.5",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T15:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 3.88,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 13,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1021"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 1.13,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 312,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1029"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "gw_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "3a0e909b-a278-4c5b-8786-975c5ef4c4c9",
+                    "siteName": "Willow Grove",
+                    "siteType": "Sensor",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            146.1779,
+                            -38.07072
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T15:00:00Z",
+                            "until": "2024-05-12T16:00:00Z",
+                            "healthParameter": "Particles",
+                            "averageValue": 4.77,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "9999"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "Particles",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T15:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 4.77,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 12,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 5.07,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 288,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "hw_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "7e56abba-a570-4139-ad68-f45033862599",
+                    "siteName": "Flynns Creek",
+                    "siteType": "Sensor",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            146.6362,
+                            -38.24396
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T15:00:00Z",
+                            "until": "2024-05-12T16:00:00Z",
+                            "healthParameter": "Particles",
+                            "averageValue": 21.83,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "9999"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "Particles",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T15:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 21.83,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 12,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 5.45,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 95,
+                                            "totalSample": 276,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "iQ_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "8413d21d-5440-4f2b-81f9-2e5cfb8620d0",
+                    "siteName": "Wangaratta",
+                    "siteType": "Standard",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            146.3133,
+                            -36.36926
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T15:00:00Z",
+                            "until": "2024-05-12T16:00:00Z",
+                            "healthParameter": "PM2.5",
+                            "averageValue": 14.55,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "1021"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "PM2.5",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T15:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 14.55,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 13,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1021"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 5.07,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 312,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1029"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "iw_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "d56ede8c-637a-41e9-a055-f53198e9456a",
+                    "siteName": "Brighton",
+                    "siteType": "Standard",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            144.998,
+                            -37.9135475
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T15:00:00Z",
+                            "until": "2024-05-12T16:00:00Z",
+                            "healthParameter": "PM2.5",
+                            "averageValue": 25.81,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Fair",
+                            "healthAdviceColor": "#EEC900",
+                            "healthCode": "1022"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "PM2.5",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T15:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 25.81,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 13,
+                                            "healthAdvice": "Fair",
+                                            "healthAdviceColor": "#EEC900",
+                                            "healthCode": "1022"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 15.13,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 107,
+                                            "totalSample": 311,
+                                            "healthAdvice": "Fair",
+                                            "healthAdviceColor": "#EEC900",
+                                            "healthCode": "1030"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "jQ_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "22b21e76-76f2-4b0d-b133-3fc852c721b5",
+                    "siteName": "Healesville",
+                    "siteType": "Sensor",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            145.5275,
+                            -37.6468239
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T15:00:00Z",
+                            "until": "2024-05-12T16:00:00Z",
+                            "healthParameter": "Particles",
+                            "averageValue": 8.55,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "9999"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "Particles",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T15:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 8.55,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 12,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 8.18,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 288,
+                                            "healthAdvice": "Fair",
+                                            "healthAdviceColor": "#EEC900",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "dw_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "ee780b50-0240-4c7e-99f8-0df759caf3a3",
+                    "siteName": "Churchill",
+                    "siteType": "Standard",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            146.414932,
+                            -38.3043137
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T14:00:00Z",
+                            "until": "2024-05-12T15:00:00Z",
+                            "healthParameter": "PM2.5",
+                            "averageValue": 0,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "1021"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "PM10",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T14:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "averageValue": 0,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 13,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1016"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "PM2.5",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T14:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "averageValue": 0,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 13,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1021"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "averageValue": 0,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 312,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1029"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "eA_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "cddf953a-b932-4918-97ea-1d19583d507a",
+                    "siteName": "Traralgon South",
+                    "siteType": "Sensor",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            146.5392,
+                            -38.29585
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T14:00:00Z",
+                            "until": "2024-05-12T15:00:00Z",
+                            "healthParameter": "Particles",
+                            "averageValue": 0,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "9999"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "Particles",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T14:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "averageValue": 0,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 12,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "averageValue": 0,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 288,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "eQ_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "70584bae-a7e7-4ae9-adf5-1e8e92b15386",
+                    "siteName": "Traralgon",
+                    "siteType": "Standard",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            146.531464,
+                            -38.1942825
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T14:00:00Z",
+                            "until": "2024-05-12T15:00:00Z",
+                            "healthParameter": "PM2.5",
+                            "averageValue": 0,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "1021"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "API",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T14:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "confidence": 0,
+                                            "totalSample": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "NO2",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T14:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "confidence": 0,
+                                            "totalSample": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "PM10",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T14:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "averageValue": 0,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 13,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1016"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "O3",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T14:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "confidence": 0,
+                                            "totalSample": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "PM2.5",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T14:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "averageValue": 0,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 13,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1021"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "averageValue": 0,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 98,
+                                            "totalSample": 312,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1029"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Visibility",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T14:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "confidence": 0,
+                                            "totalSample": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "SO2",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T14:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "confidence": 0,
+                                            "totalSample": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "CO",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T14:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "confidence": 0,
+                                            "totalSample": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "8HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T14:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "confidence": 0,
+                                            "totalSample": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "eg_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "69fa2d5e-557c-457a-9103-21bc2609f5eb",
+                    "siteName": "Tyers North",
+                    "siteType": "Sensor",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            146.4828,
+                            -38.12967
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T14:00:00Z",
+                            "until": "2024-05-12T15:00:00Z",
+                            "healthParameter": "Particles",
+                            "averageValue": 0,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "9999"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "Particles",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T14:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "averageValue": 0,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 12,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "averageValue": 0,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 288,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "fA_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "f5c385fd-c136-4398-99b0-35696b711b7b",
+                    "siteName": "Moe",
+                    "siteType": "Standard",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            146.258331,
+                            -38.1864662
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T14:00:00Z",
+                            "until": "2024-05-12T15:00:00Z",
+                            "healthParameter": "PM2.5",
+                            "averageValue": 0,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "1021"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "PM10",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T14:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "averageValue": 0,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 13,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1016"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "PM2.5",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T14:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "averageValue": 0,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 13,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1021"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "averageValue": 0,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 312,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1029"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "gw_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "3a0e909b-a278-4c5b-8786-975c5ef4c4c9",
+                    "siteName": "Willow Grove",
+                    "siteType": "Sensor",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            146.1779,
+                            -38.07072
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T14:00:00Z",
+                            "until": "2024-05-12T15:00:00Z",
+                            "healthParameter": "Particles",
+                            "averageValue": 0,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "9999"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "Particles",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T14:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "averageValue": 0,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 12,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "averageValue": 0,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 288,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "hw_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "7e56abba-a570-4139-ad68-f45033862599",
+                    "siteName": "Flynns Creek",
+                    "siteType": "Sensor",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            146.6362,
+                            -38.24396
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T14:00:00Z",
+                            "until": "2024-05-12T15:00:00Z",
+                            "healthParameter": "Particles",
+                            "averageValue": 0,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "9999"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "Particles",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T14:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "averageValue": 0,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 12,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "averageValue": 0,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 95,
+                                            "totalSample": 276,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "iQ_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "8413d21d-5440-4f2b-81f9-2e5cfb8620d0",
+                    "siteName": "Wangaratta",
+                    "siteType": "Standard",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            146.3133,
+                            -36.36926
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T14:00:00Z",
+                            "until": "2024-05-12T15:00:00Z",
+                            "healthParameter": "PM2.5",
+                            "averageValue": 0,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "1021"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "PM2.5",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T14:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "averageValue": 0,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 13,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1021"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "averageValue": 0,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 312,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1029"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "iw_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "d56ede8c-637a-41e9-a055-f53198e9456a",
+                    "siteName": "Brighton",
+                    "siteType": "Standard",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            144.998,
+                            -37.9135475
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T14:00:00Z",
+                            "until": "2024-05-12T15:00:00Z",
+                            "healthParameter": "PM2.5",
+                            "averageValue": 0,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Fair",
+                            "healthAdviceColor": "#EEC900",
+                            "healthCode": "1022"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "PM2.5",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T14:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "averageValue": 0,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 13,
+                                            "healthAdvice": "Fair",
+                                            "healthAdviceColor": "#EEC900",
+                                            "healthCode": "1022"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "averageValue": 0,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 107,
+                                            "totalSample": 311,
+                                            "healthAdvice": "Fair",
+                                            "healthAdviceColor": "#EEC900",
+                                            "healthCode": "1030"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "jQ_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "22b21e76-76f2-4b0d-b133-3fc852c721b5",
+                    "siteName": "Healesville",
+                    "siteType": "Sensor",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            145.5275,
+                            -37.6468239
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T14:00:00Z",
+                            "until": "2024-05-12T15:00:00Z",
+                            "healthParameter": "Particles",
+                            "averageValue": 0,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "9999"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "Particles",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T14:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "averageValue": 0,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 12,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T15:00:00Z",
+                                            "averageValue": 0,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 288,
+                                            "healthAdvice": "Fair",
+                                            "healthAdviceColor": "#EEC900",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "dw_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "ee780b50-0240-4c7e-99f8-0df759caf3a3",
+                    "siteName": "Churchill",
+                    "siteType": "Standard",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            146.414932,
+                            -38.3043137
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T16:00:00Z",
+                            "until": "2024-05-12T17:00:00Z",
+                            "healthParameter": "PM2.5",
+                            "averageValue": 2.67,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "1021"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "PM10",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T16:00:00Z",
+                                            "until": "2024-05-12T17:00:00Z",
+                                            "averageValue": 4.71,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 13,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1016"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "PM2.5",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T16:00:00Z",
+                                            "until": "2024-05-12T17:00:00Z",
+                                            "averageValue": 2.67,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 13,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1021"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T17:00:00Z",
+                                            "averageValue": 1.35,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 312,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1029"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "eA_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "cddf953a-b932-4918-97ea-1d19583d507a",
+                    "siteName": "Traralgon South",
+                    "siteType": "Sensor",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            146.5392,
+                            -38.29585
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T15:00:00Z",
+                            "until": "2024-05-12T16:00:00Z",
+                            "healthParameter": "Particles",
+                            "averageValue": 6.33,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "9999"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "Particles",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T16:00:00Z",
+                                            "until": "2024-05-12T17:00:00Z",
+                                            "averageValue": 2.33,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 12,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 6.16,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 288,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "eQ_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "70584bae-a7e7-4ae9-adf5-1e8e92b15386",
+                    "siteName": "Traralgon",
+                    "siteType": "Standard",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            146.531464,
+                            -38.1942825
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T15:00:00Z",
+                            "until": "2024-05-12T16:00:00Z",
+                            "healthParameter": "PM2.5",
+                            "averageValue": 5.7,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "1021"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "API",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T16:00:00Z",
+                                            "until": "2024-05-12T17:00:00Z",
+                                            "confidence": 0,
+                                            "totalSample": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "NO2",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T16:00:00Z",
+                                            "until": "2024-05-12T17:00:00Z",
+                                            "confidence": 0,
+                                            "totalSample": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "PM10",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T16:00:00Z",
+                                            "until": "2024-05-12T17:00:00Z",
+                                            "averageValue": 11.66,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 13,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1016"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "O3",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T16:00:00Z",
+                                            "until": "2024-05-12T17:00:00Z",
+                                            "confidence": 0,
+                                            "totalSample": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "PM2.5",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T16:00:00Z",
+                                            "until": "2024-05-12T17:00:00Z",
+                                            "averageValue": 2.7,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 13,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1021"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 4.59,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 98,
+                                            "totalSample": 312,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1029"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Visibility",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T16:00:00Z",
+                                            "until": "2024-05-12T17:00:00Z",
+                                            "confidence": 0,
+                                            "totalSample": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "SO2",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T16:00:00Z",
+                                            "until": "2024-05-12T17:00:00Z",
+                                            "confidence": 0,
+                                            "totalSample": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "CO",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T16:00:00Z",
+                                            "until": "2024-05-12T17:00:00Z",
+                                            "confidence": 0,
+                                            "totalSample": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "8HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T15:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "confidence": 0,
+                                            "totalSample": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "eg_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "69fa2d5e-557c-457a-9103-21bc2609f5eb",
+                    "siteName": "Tyers North",
+                    "siteType": "Sensor",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            146.4828,
+                            -38.12967
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T15:00:00Z",
+                            "until": "2024-05-12T16:00:00Z",
+                            "healthParameter": "Particles",
+                            "averageValue": 5.45,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "9999"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "Particles",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T16:00:00Z",
+                                            "until": "2024-05-12T17:00:00Z",
+                                            "averageValue": 5.45,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 12,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 5.97,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 288,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "fA_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "f5c385fd-c136-4398-99b0-35696b711b7b",
+                    "siteName": "Moe",
+                    "siteType": "Standard",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            146.258331,
+                            -38.1864662
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T15:00:00Z",
+                            "until": "2024-05-12T16:00:00Z",
+                            "healthParameter": "PM2.5",
+                            "averageValue": 3.88,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "1021"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "PM10",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T16:00:00Z",
+                                            "until": "2024-05-12T17:00:00Z",
+                                            "averageValue": 11.29,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 13,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1016"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "PM2.5",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T16:00:00Z",
+                                            "until": "2024-05-12T17:00:00Z",
+                                            "averageValue": 3.88,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 13,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1021"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 1.13,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 312,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1029"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "gw_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "3a0e909b-a278-4c5b-8786-975c5ef4c4c9",
+                    "siteName": "Willow Grove",
+                    "siteType": "Sensor",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            146.1779,
+                            -38.07072
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T15:00:00Z",
+                            "until": "2024-05-12T16:00:00Z",
+                            "healthParameter": "Particles",
+                            "averageValue": 4.77,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "9999"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "Particles",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T16:00:00Z",
+                                            "until": "2024-05-12T17:00:00Z",
+                                            "averageValue": 4.77,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 12,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 5.07,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 288,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "hw_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "7e56abba-a570-4139-ad68-f45033862599",
+                    "siteName": "Flynns Creek",
+                    "siteType": "Sensor",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            146.6362,
+                            -38.24396
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T15:00:00Z",
+                            "until": "2024-05-12T16:00:00Z",
+                            "healthParameter": "Particles",
+                            "averageValue": 21.83,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "9999"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "Particles",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T16:00:00Z",
+                                            "until": "2024-05-12T17:00:00Z",
+                                            "averageValue": 21.83,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 12,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 5.45,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 95,
+                                            "totalSample": 276,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "iQ_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "8413d21d-5440-4f2b-81f9-2e5cfb8620d0",
+                    "siteName": "Wangaratta",
+                    "siteType": "Standard",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            146.3133,
+                            -36.36926
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T15:00:00Z",
+                            "until": "2024-05-12T16:00:00Z",
+                            "healthParameter": "PM2.5",
+                            "averageValue": 14.55,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "1021"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "PM2.5",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T16:00:00Z",
+                                            "until": "2024-05-12T17:00:00Z",
+                                            "averageValue": 14.55,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 13,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1021"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 5.07,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 312,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "1029"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "iw_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "d56ede8c-637a-41e9-a055-f53198e9456a",
+                    "siteName": "Brighton",
+                    "siteType": "Standard",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            144.998,
+                            -37.9135475
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T15:00:00Z",
+                            "until": "2024-05-12T16:00:00Z",
+                            "healthParameter": "PM2.5",
+                            "averageValue": 25.81,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Fair",
+                            "healthAdviceColor": "#EEC900",
+                            "healthCode": "1022"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "PM2.5",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T16:00:00Z",
+                                            "until": "2024-05-12T17:00:00Z",
+                                            "averageValue": 25.81,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 108,
+                                            "totalSample": 13,
+                                            "healthAdvice": "Fair",
+                                            "healthAdviceColor": "#EEC900",
+                                            "healthCode": "1022"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 15.13,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 107,
+                                            "totalSample": 311,
+                                            "healthAdvice": "Fair",
+                                            "healthAdviceColor": "#EEC900",
+                                            "healthCode": "1030"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "environmental_data",
+                "_id": "jQ_AbY8BluZNkifw5GKK",
+                "_score": 1,
+                "_source": {
+                    "siteID": "22b21e76-76f2-4b0d-b133-3fc852c721b5",
+                    "siteName": "Healesville",
+                    "siteType": "Sensor",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            145.5275,
+                            -37.6468239
+                        ]
+                    },
+                    "siteHealthAdvices": [
+                        {
+                            "since": "2024-05-12T15:00:00Z",
+                            "until": "2024-05-12T16:00:00Z",
+                            "healthParameter": "Particles",
+                            "averageValue": 8.55,
+                            "unit": "&micro;g/m&sup3;",
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "9999"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "Particles",
+                            "timeSeriesReadings": [
+                                {
+                                    "timeSeriesName": "1HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-12T16:00:00Z",
+                                            "until": "2024-05-12T17:00:00Z",
+                                            "averageValue": 8.55,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 12,
+                                            "healthAdvice": "Good",
+                                            "healthAdviceColor": "#42A93C",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "timeSeriesName": "24HR_AV",
+                                    "readings": [
+                                        {
+                                            "since": "2024-05-11T16:00:00Z",
+                                            "until": "2024-05-12T16:00:00Z",
+                                            "averageValue": 8.18,
+                                            "unit": "&micro;g/m&sup3;",
+                                            "confidence": 100,
+                                            "totalSample": 288,
+                                            "healthAdvice": "Fair",
+                                            "healthAdviceColor": "#EEC900",
+                                            "healthCode": "9999"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
