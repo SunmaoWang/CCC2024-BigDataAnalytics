@@ -3,6 +3,9 @@ import os
 from elasticsearch import Elasticsearch, helpers
 import logging
 from pyproj import Transformer
+from flask import request
+from string import Template
+import json
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -15,7 +18,8 @@ es_pass = os.getenv('ELASTICSEARCH_PASS', 'elastic')
 es = Elasticsearch(
     es_host,
     verify_certs=False,
-    basic_auth=(es_user, es_pass)
+    basic_auth=(es_user, es_pass),
+    timeout=30
 )
 
 transformer = Transformer.from_crs("EPSG:4326", "EPSG:3857")
@@ -27,45 +31,25 @@ logging.info(f"Using Elasticsearch user: {es_user}")
 # Index settings
 index_name = "chronic_diseases_epa"
 
-index_settings = {
-    "settings": {
-        "number_of_shards": 3,
-        "number_of_replicas": 1
-    },
-    "mappings": {
-        "properties": {
-            "Site Name": {"type": "text"},
-            "Parameters": {
-                "type": "nested",
-                "properties": {
-                    "name": {"type": "text"},
-                    "timeSeriesReadings": {
-                        "type": "nested",
-                        "properties": {
-                            "averageValue": {"type": "float"},
-                            "unit": {"type": "keyword"},
-                            "confidence": {"type": "integer"}
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
 geoshape_query = {
   "query": {
-    "geo_shape": {
-      "Local Governemnt Area Shape": { 
-        "relation": "intersects",
-        "shape": {
-          "type":  "point",
+    "bool": {
+      "must": {
+        "match_all": {}
+      },
+      "filter": {
+        "geo_shape": {
+          "Local Government Area Shape": {
+            "shape": {
+              "type": "point",
+            },
+            "relation": "contains"
+          }
         }
       }
     }
   }
 }
-
 
 # Function to fetch data from the API
 def fetch_air_quality_data():
@@ -87,15 +71,12 @@ def fetch_air_quality_data():
         return None
 
 def index_data_to_es(data):
-    actions = []
-    for record in data['records'][0:2]:
+    for record in data['records']:
         latitude, longitude = record['geometry']['coordinates']
-        print(latitude, longitude)
-        geoshape_query["query"]["geo_shape"]["Local Governemnt Area Shape"]["shape"]["coordinates"] = [latitude, longitude]
+        geoshape_query["query"]["bool"]["filter"]["geo_shape"]["Local Government Area Shape"]["shape"]["coordinates"] = [longitude, latitude]
         response = es.search(index=index_name, body=geoshape_query)
-        print(response)
+        parent = response["hits"]["hits"][0]['_id']
 
-        """
         if 'parameters' in record:
             for param in record['parameters']:
                 for reading in param['timeSeriesReadings']:
@@ -109,27 +90,54 @@ def index_data_to_es(data):
                             r['confidence'] = int(r['confidence'])
                         else:
                             logging.warning(f"'confidence' missing in reading: {r}")
+            
+            record['relation_type'] = {'name': 'epa', 'parent': parent}
+            pageDict = {
+                    "Site Name": record['siteName'],
+                    "Parameters": record['parameters'],
+                    "relation_type": {'name': 'epa', 'parent': parent}
+                }
+            es.index(index=index_name, body=pageDict, routing=parent, id=record['siteID'] + record['siteHealthAdvices'][0]['since'])
 
-            action = {
-                "_index": index_name,
-                "_source": record
+name_expr = Template('''''')
+
+def get_joined_data(name):
+    query = {
+      "query": {
+        "has_parent": {
+          "parent_type": "chronic_diseases",
+          'query': {
+            "bool": {
+              "must": {
+                "match": {
+                  "Local Government Area Name": name
+                }
+              }
             }
-            actions.append(action)
+          },
+          'inner_hits': {}
+        }
+      }
+    }
 
-    try:
-        helpers.bulk(es, actions)
-        logging.info("Data indexed successfully.")
-    except helpers.BulkIndexError as e:
-        logging.error(f"Error indexing data: {e.errors}")
-        """
+    response = es.search(index=index_name, body=query)
+
+    data = response['hits']['hits'][0]['inner_hits']['chronic_diseases']['hits']['hits'][0]['_source']
+
+    data.update(response['hits']['hits'][0]['_source'])
+    
+    return data
 
 # Main function
 def main():
-    air_quality_data = fetch_air_quality_data()
-    if air_quality_data:
-        index_data_to_es(air_quality_data)
-    else:
-        logging.info("No data received to index.")
+    name = "whitehorse"
+
+    #air_quality_data = fetch_air_quality_data()
+    #if air_quality_data:
+    #    index_data_to_es(air_quality_data)
+    #else:
+    #    logging.info("No data received to index.")
+    print(get_joined_data(name))
 
 if __name__ == "__main__":
     main()
