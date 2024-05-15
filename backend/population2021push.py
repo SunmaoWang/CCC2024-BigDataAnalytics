@@ -5,7 +5,7 @@ es=Elasticsearch('https://127.0.0.1:9200/',
                  verify_certs=False,
                  basic_auth=('elastic','elastic'))
 
-with open('/home/chanwang1/CCC2024-BigDataAnalytics/data/cleaned/population2021.json', 'r') as file:
+with open('../data/cleaned/population2021.json', 'r') as file:
     data = json.load(file)
 
 index_name = 'population2021'
