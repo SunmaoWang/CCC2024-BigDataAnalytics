@@ -68,6 +68,7 @@ index_body = {
                     }
                 }
             },
+            "Time": {"type": "date"},
             "relation_type": {
                 "type": "join",
                 "relations": {
