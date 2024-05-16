@@ -48,7 +48,6 @@ def get_joined_data(name):
     environmental_result = es.search(index=environmental_index_name, body=environmental_query)
     useful_result = es.search(index=useful_index_name, body=useful_query)
 
-    # Combine data from all queries
     for pop in population_result['hits']['hits']:
         pop_lga_code = str(pop['_source']['LGA_code'])
         for env in environmental_result['hits']['hits']:
@@ -57,6 +56,9 @@ def get_joined_data(name):
                 # Find and add useful data
                 useful_data = next((item['_source'] for item in useful_result['hits']['hits'] if str(item['_source']['ABSLGACODE']) == pop_lga_code), None)
                 if useful_data:
+                    # Rename 'geometry' field to 'useful_geometry' before adding to combined data
+                    if 'geometry' in useful_data:
+                        useful_data['useful_geometry'] = useful_data.pop('geometry')
                     combined.update(useful_data)
                 all_data.append(combined)
 
