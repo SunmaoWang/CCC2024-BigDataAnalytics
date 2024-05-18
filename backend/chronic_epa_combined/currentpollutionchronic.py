@@ -25,7 +25,7 @@ logging.info(f"Using Elasticsearch host: {es_host}")
 logging.info(f"Using Elasticsearch user: {es_user}")
 
 # Index settings
-index_name = "chronic_diseases_epa"
+index_name = "chronic_diseases"
 
 lga_query = {
     "_source": "Local Government Area Name",
