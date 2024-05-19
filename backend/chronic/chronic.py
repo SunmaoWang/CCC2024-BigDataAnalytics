@@ -34,10 +34,15 @@ lga_query = {
     "size": 79
 }
 
+# Your Flask application code
+
 def get_joined_data(name):
-    logging.debug("Inside get_joined_data function")
+    debug_messages = []  # List to store debug messages
+
+    debug_messages.append("Inside get_joined_data function")
+
     if name is None:
-        logging.debug("Name is None, querying all LGAs")
+        debug_messages.append("Name is None, querying all LGAs")
         lga_result = es.search(index=index_name, body=lga_query)
         buckets = lga_result["hits"]["hits"]
         names = []
@@ -45,57 +50,60 @@ def get_joined_data(name):
             if bucket["_source"] != dict():
                 names.append(bucket["_source"]["Local Government Area Name"])
     else:
-        logging.debug(f"Name is {name}, querying only for this LGA")
-        names = []
-        names.append(name)
+        debug_messages.append(f"Name is {name}, querying only for this LGA")
+        names = [name]
 
     all_data = []
 
     for n in names:
-      logging.debug(f"Querying data for LGA: {n}")
-      query = {
-        "query": {
-          "has_parent": {
-            "parent_type": "chronic_diseases",
-            'query': {
-              "bool": {
-                "must": {
-                  "match": {
-                    "Local Government Area Name": n
-                  }
+        debug_messages.append(f"Querying data for LGA: {n}")
+        query = {
+            "query": {
+                "has_parent": {
+                    "parent_type": "chronic_diseases",
+                    'query': {
+                        "bool": {
+                            "must": {
+                                "match": {
+                                    "Local Government Area Name": n
+                                }
+                            }
+                        }
+
+                    },
+                    'inner_hits': {}
                 }
-              }
-              
             },
-            'inner_hits': {}
-          }
-        },
-        "size": 1,
-      }
+            "size": 1,
+        }
 
-      logging.debug("Executing Elasticsearch query")
-      response = es.search(index=index_name, body=query)
+        debug_messages.append("Executing Elasticsearch query")  # Add debug message to list
+        response = es.search(index=index_name, body=query)
 
-      if response['hits']['hits'] != list():
-        logging.debug("Response received from Elasticsearch")
+        if response['hits']['hits'] != list():
+            debug_messages.append("Response received from Elasticsearch")  # Add debug message to list
 
-        data = response['hits']['hits'][0]['inner_hits']['chronic_diseases']['hits']['hits'][0]['_source']
+            data = response['hits']['hits'][0]['inner_hits']['chronic_diseases']['hits']['hits'][0]['_source']
+            data.update(response['hits']['hits'][0]['_source'])
 
-        data.update(response['hits']['hits'][0]['_source'])
+            all_data.append(data)
 
-        all_data.append(data)
-    
-    return all_data
+    return all_data, debug_messages  # Return both data and debug messages
 
-# Main function
 def main():
-
     try:
-        name= request.headers['X-Fission-Params-Name']
-        logging.debug(f"Received name from request headers: {name}")
+        name = request.headers.get('X-Fission-Params-Name')
     except KeyError:
         name = None
-        logging.debug("Name not found in request headers")
-    
-    data = get_joined_data(name)
-    return json.dumps(data, indent=4)
+
+    data, debug_messages = get_joined_data(name)  # Retrieve data and debug messages
+
+    # Include debug messages in the output result
+    output = {
+        "data": data,
+        "debug": debug_messages  # Include the list of debug messages in the response
+    }
+
+    json_output = json.dumps(output, indent=4)
+
+    return json_output
