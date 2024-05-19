@@ -31,14 +31,7 @@ lga_query = {
     "query": {
         "match_all": {}
     },
-    "aggs": {
-        "unique_lga_names": {
-            "terms": {
-                "field": "Local Government Area Name.keyword",
-            }
-        }
-    },
-    "size": 160
+    "size": 79
 }
 
 def get_joined_data(name):
@@ -102,4 +95,6 @@ def main():
         name= request.headers['X-Fission-Params-Name']
     except KeyError:
         name = None
-    return json.dumps(get_joined_data(name))
+    
+    data = get_joined_data(name)
+    return json.dumps(data, indent=4)
