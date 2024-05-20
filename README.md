@@ -35,13 +35,13 @@ Select functions contained in the backend folder are utilised to create Elastic 
 
 Some examples of Elastic Search indices are:
 
-**population2021:** Index to store population data for each LGA.
+- **population2021:** Index to store population data for each LGA.
 
-**useful:** Index to store LGA shapefiles in a more useful, preprocessed, format.
+- **useful:** Index to store LGA shapefiles in a more useful, preprocessed, format.
 
-**environmental_data_lga:** Index to store air pollution data for each monitoring station.
+- **environmental_data_lga:** Index to store air pollution data for each monitoring station.
 
-**chronic_diseases_epa:** Index to store both air pollution data and chronic disease data for each LGA together, utilising a parent child relationship.
+- **chronic_diseases_epa:** Index to store both air pollution data and chronic disease data for each LGA together, utilising a parent child relationship.
 
 ## RESTful API
 
@@ -49,15 +49,15 @@ Select functions contained in the backend folder are utilised to implement a RES
 
 Some examples of HTTP triggers are:
 
-**/chronicepa79:** Returns the latest epa reading for all air monitoring stations, joined with their respective lga's chronic disease data.
+- **/chronicepa79:** Returns the latest epa reading for all air monitoring stations, joined with their respective lga's chronic disease data.
 
-**/chronicepa79/{lga}:** Same as \textbf{/chronicepa79}, but filtered for a specific lga.
+- **/chronicepa79/{lga}:** Same as \textbf{/chronicepa79}, but filtered for a specific lga.
 
-**/populationepalga:** Returns all lga's population data.
+- **/populationepalga:** Returns all lga's population data.
 
-**/populationepalga/lga:** Same as \textbf{/populationepalga}, but filtered for a specific lga.
+- **/populationepalga/{lga}:** Same as \textbf{/populationepalga}, but filtered for a specific lga.
 
-**/airpol**: Returns latest air pollution data from all stations.
+- **/airpol**: Returns latest air pollution data from all stations.
 
 ## Automated Data Harvesters
 
