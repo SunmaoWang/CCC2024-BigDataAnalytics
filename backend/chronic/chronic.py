@@ -24,14 +24,14 @@ logging.info(f"Using Elasticsearch host: {es_host}")
 logging.info(f"Using Elasticsearch user: {es_user}")
 
 # Index settings
-index_name = "chronic_diseases_epa"
+index_name = "chronic_diseases"
 
 lga_query = {
     "_source": "Local Government Area Name",
     "query": {
         "match_all": {}
     },
-    "size": 790  # Set the size to 79 to ensure all LGAs are included
+    "size": 79  # Set the size to 79 to ensure all LGAs are included
 }
 
 def get_joined_data(name):
@@ -65,14 +65,7 @@ def get_joined_data(name):
             "inner_hits": {}
           }
         },
-        "size": 10,  # This specifies you want only the most recent entry per LGA
-        "sort": [
-          {
-            "Time": {
-              "order": "desc"
-            }
-          }
-        ]
+        "size": 1,  # This specifies you want only the most recent entry per LGA
       }
 
       response = es.search(index=index_name, body=query)
