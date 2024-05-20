@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to the CCC2024 Big Data Analytics project! This project is designed to analyze big data related to chronic diseases, air pollution, and demographic distributions using advanced data analytics and machine learning techniques. Our system integrates multiple components including backend services, databases, and a dynamic frontend, all orchestrated with Kubernetes.
+Welcome to the CCC2024 Big Data Analytics project! This project is designed to analyze big data related to chronic diseases, population and air pollution, also demographic distributions using data analytics and machine learning and other visualization techniques. Our system integrates multiple components including backend services, databases, and frontend, all orchestrated with Kubernetes.
 
 ## Project Structure
 
