@@ -31,7 +31,7 @@ lga_query = {
     "query": {
         "match_all": {}
     },
-    "size": 79  # Set the size to 79 to ensure all LGAs are included
+    "size": 79
 }
 
 def get_joined_data(name):
@@ -65,7 +65,7 @@ def get_joined_data(name):
             "inner_hits": {}
           }
         },
-        "size": 1,  # This specifies you want only the most recent entry per LGA
+        "size": 100,
       }
 
       response = es.search(index=index_name, body=query)
