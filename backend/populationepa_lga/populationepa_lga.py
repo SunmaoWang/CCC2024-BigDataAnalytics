@@ -61,4 +61,4 @@ def main():
         name = None
 
     data = get_joined_data(name)
-    return json.dumps(data, indent=4)  # Formatting for better readability
+    return json.dumps(data, indent=4)

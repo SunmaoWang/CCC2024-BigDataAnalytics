@@ -26,7 +26,7 @@ def get_environmental_data(name):
         query = {"query": {"match_all": {}}}
     else:
         # Query specific LGA by name
-        query = {"query": {"match": {"lga_code": name}}}  # Assume 'lga_code' is the field used in 'environmental_data_lga'
+        query = {"query": {"match": {"lga_code": name}}}
 
     # Execute query to retrieve environmental data
     result = es.search(index=environmental_index_name, body=query)
@@ -43,4 +43,4 @@ def main():
         name = None
 
     data = get_environmental_data(name)
-    return json.dumps(data, indent=4)  # Formatting for better readability
+    return json.dumps(data, indent=4)

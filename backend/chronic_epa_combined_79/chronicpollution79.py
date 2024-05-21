@@ -65,7 +65,7 @@ def get_joined_data(name):
             "inner_hits": {}
           }
         },
-        "size": 1,  # This specifies you want only the most recent entry per LGA
+        "size": 1,
         "sort": [
           {
             "Time": {
@@ -78,7 +78,6 @@ def get_joined_data(name):
       response = es.search(index=index_name, body=query)
 
       if response['hits']['hits']:
-        # Assuming there is at least one hit, update the data with the most recent entry
         data = response['hits']['hits'][0]['inner_hits']['chronic_diseases']['hits']['hits'][0]['_source']
         data.update(response['hits']['hits'][0]['_source'])
         all_data.append(data)
@@ -93,4 +92,4 @@ def main():
         name = None
 
     data = get_joined_data(name)
-    return json.dumps(data, indent=4)  # Using indent for better readability in the JSON output
+    return json.dumps(data, indent=4)
