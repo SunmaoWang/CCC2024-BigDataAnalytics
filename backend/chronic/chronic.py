@@ -35,9 +35,7 @@ lga_query = {
 }
 
 def get_joined_data(name):
-    logging.debug("Inside get_joined_data function")
     if name is None:
-        logging.debug("Name is None, querying all LGAs")
         lga_result = es.search(index=index_name, body=lga_query)
         buckets = lga_result["hits"]["hits"]
         names = []
@@ -45,19 +43,17 @@ def get_joined_data(name):
             if bucket["_source"] != dict():
                 names.append(bucket["_source"]["Local Government Area Name"])
     else:
-        logging.debug(f"Name is {name}, querying only for this LGA")
         names = []
         names.append(name)
 
     all_data = []
 
     for n in names:
-      logging.debug(f"Querying data for LGA: {n}")
       query = {
         "query": {
           "has_parent": {
             "parent_type": "chronic_diseases",
-            'query': {
+            "query": {
               "bool": {
                 "must": {
                   "match": {
@@ -65,37 +61,29 @@ def get_joined_data(name):
                   }
                 }
               }
-              
             },
-            'inner_hits': {}
+            "inner_hits": {}
           }
         },
-        "size": 1,
+        "size": 100,
       }
 
-      logging.debug("Executing Elasticsearch query")
       response = es.search(index=index_name, body=query)
 
-      if response['hits']['hits'] != list():
-        logging.debug("Response received from Elasticsearch")
-
+      if response['hits']['hits']:
+        # Assuming there is at least one hit, update the data with the most recent entry
         data = response['hits']['hits'][0]['inner_hits']['chronic_diseases']['hits']['hits'][0]['_source']
-
         data.update(response['hits']['hits'][0]['_source'])
-
         all_data.append(data)
-    
+
     return all_data
 
 # Main function
 def main():
-
     try:
-        name= request.headers['X-Fission-Params-Name']
-        logging.debug(f"Received name from request headers: {name}")
+        name = request.headers['X-Fission-Params-Name']
     except KeyError:
         name = None
-        logging.debug("Name not found in request headers")
-    
+
     data = get_joined_data(name)
-    return json.dumps(data, indent=4)
+    return json.dumps(data, indent=4)  # Using indent for better readability in the JSON output
