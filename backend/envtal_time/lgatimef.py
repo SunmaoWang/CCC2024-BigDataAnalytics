@@ -4,7 +4,8 @@ import logging
 from flask import request
 import json
 from datetime import datetime
-
+## Search related information from environmental_data_lga index via time
+## Enter time. Ex.curl -H "X-Fission-Params-Name: 2024-05-15T18:00:00Z"
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
